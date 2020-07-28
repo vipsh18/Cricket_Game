@@ -1,0 +1,26 @@
+{
+  "name": "fbinstant-ads",
+  "version": "1.0.0",
+  "description": "Audience Network demo for Facebook Instant Games",
+  "main": "index.html",
+  "repository": "https://github.com/edgarjcfn/fbinstant-ads.git",
+  "author": "Edgar Neto <edgarneto@fb.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "gulp": "3.9.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-webserver": "^0.9.1",
+    "gulp-zip": "^4.1.0",
+    "jquery": "^3.3.1",
+    "open": "^0.0.5",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "postinstall": "if [ ! -f config.json ]; then cp config.template.json config.json && echo \"Install finished. \nPlease fill in your app details in config.json\" && open config.json; fi"
+  }
+}
